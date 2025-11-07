@@ -1,0 +1,16 @@
+<aside id="recent-container" class="recent-container wide">
+    <div class="recent">
+        <details open>
+            <summary>
+                <span class="details">Latest Posts</span>
+            </summary>
+            <div class="inner">
+                {{ range first 5 (where .Site.RegularPages "Type" "posts") }}
+                <div class="recent-post-item">
+                    <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                </div>
+                {{ end }}
+            </div>
+        </details>
+    </div>
+</aside>

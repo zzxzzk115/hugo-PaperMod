@@ -1,6 +1,6 @@
 {{- define "main" }}
 
-<article class="post-single">
+<article class="post" {{- if .Param "autonumbering" }} autonumbering {{- end }}>
   <header class="post-header">
     {{ partial "breadcrumbs.html" . }}
     <h1 class="post-title entry-hint-parent">
@@ -33,6 +33,8 @@
   {{- if (.Param "ShowToc") }}
   {{- partial "toc.html" . }}
   {{- end }}
+
+  {{- partial "recent_posts.html" . }}
 
   {{- if .Content }}
   <div class="post-content">
