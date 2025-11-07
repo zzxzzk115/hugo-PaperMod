@@ -31,3 +31,18 @@
 
 - id: code_copied
   translation: "copied!"
+
+- id: caution
+  translation: 'CAUTION'
+
+- id: important
+  translation: 'IMPORTANT'
+
+- id: note
+  translation: 'NOTE'
+
+- id: tip
+  translation: 'TIP'
+  
+- id: warning
+  translation: 'WARNING'
